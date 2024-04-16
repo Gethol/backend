@@ -3,8 +3,10 @@ const app = express();
 const port = 3001;
 const birds = require("./routes/birds.js");
 const cats = require("./routes/cat.routes.js");
+const tasks = require("./routes/todo.routes.js")
 
 app.use('/cats', cats);
+app.use('/tasks', tasks)
 app.use('/birds', birds);
 
 
