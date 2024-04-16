@@ -23,7 +23,7 @@ const myTodos = {
 };
 
 exports.read = (req, res) => {
-    res.send('All the tasks')
+    res.send(myTodos)
 }
 
 exports.readOne = (req, res) => {
